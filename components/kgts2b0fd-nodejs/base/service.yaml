@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Service
+metadata: 
+  labels: 
+    app.kubernetes.io/instance: kgts2b0fd-nodejs
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/name: kgts2b0fd-nodejs 
+  name: kgts2b0fd-nodejs
+spec:
+  ports:
+  - port: 3001 
+    targetPort: 3001 
+  selector:
+    app.kubernetes.io/instance: kgts2b0fd-nodejs 
